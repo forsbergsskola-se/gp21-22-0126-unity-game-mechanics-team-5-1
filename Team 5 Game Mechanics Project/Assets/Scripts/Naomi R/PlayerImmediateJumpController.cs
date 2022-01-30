@@ -1,18 +1,24 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class PlayerImmediateJumpController : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    private Rigidbody myRigidbody;
+    private PlayerInputController playerInputController;
+    private GroundChecker groundChecker;
+    [SerializeField] private float jumpForce = 500f;
+
+    private void Awake()
     {
-        
+        myRigidbody = this.gameObject.GetComponent<Rigidbody>();
+        playerInputController = this.gameObject.GetComponent<PlayerInputController>();
+        groundChecker = this.gameObject.GetComponent<GroundChecker>();
     }
 
-    // Update is called once per frame
-    void Update()
+    private void Update()
     {
-        
+        //Apply jump force
+        //Preferably interact with physics in FixedUpdate() 
+        if (playerInputController.JumpInputDown && groundChecker.IsGrounded)
+            myRigidbody.AddForce(Vector3.up * jumpForce);
     }
 }
