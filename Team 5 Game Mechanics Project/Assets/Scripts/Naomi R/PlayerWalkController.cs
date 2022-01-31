@@ -9,6 +9,7 @@ public class PlayerWalkController : MonoBehaviour
     private GroundChecker groundChecker;
     [SerializeField] private float moveSpeed = 5f;
     [SerializeField] private float chargingMoveSpeedFactor = 0.5f;
+    private bool facingRight= true;
     
     private void Awake()
     {
@@ -25,5 +26,20 @@ public class PlayerWalkController : MonoBehaviour
             currentMoveSpeed *= chargingMoveSpeedFactor;
 
         myRigidbody.velocity = new Vector3(playerInputController.MoveInput * currentMoveSpeed, myRigidbody.velocity.y, 0);
+        if (playerInputController.MoveInput<0 && facingRight)
+        {
+            flip();
+        }
+        else if (playerInputController.MoveInput>0 && !facingRight)
+        {
+            flip();
+        }
+        
+    }
+
+    void flip()
+    {
+        facingRight = !facingRight;
+        transform.Rotate(0, 180f ,0 );
     }
 }
