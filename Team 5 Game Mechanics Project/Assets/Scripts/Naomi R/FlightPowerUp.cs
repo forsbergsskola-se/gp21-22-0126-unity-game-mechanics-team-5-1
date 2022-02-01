@@ -1,16 +1,30 @@
-using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class FlightPowerUp : MonoBehaviour
 {
-    private void OnCollisionEnter(Collision collision)
+    [SerializeField] private float duration = 5f;
+    
+    private void OnTriggerEnter(Collider collision)
     {
         if (collision.gameObject.CompareTag("Player"))
         {
             Debug.Log("power up was picked up");
+            StartCoroutine(PowerUp(collision));
         }
-        Destroy(this.gameObject);
+    }
+
+    IEnumerator PowerUp(Collider player)
+    {
+        Debug.Log("I started the coroutine");
+
+        GetComponent<MeshRenderer>().enabled = false;
+        GetComponent<BoxCollider>().enabled = false;
+        
+        yield return new WaitForSeconds(duration);
+        Debug.Log("I finished the waiting");
+        
+        Destroy(gameObject);
     }
 }
