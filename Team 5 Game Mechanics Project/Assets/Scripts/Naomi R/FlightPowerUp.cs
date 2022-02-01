@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -5,7 +6,15 @@ using UnityEngine;
 public class FlightPowerUp : MonoBehaviour
 {
     [SerializeField] private float duration = 5f;
-    
+    private PlayerInputController playerInputController;
+    private GameObject player;
+
+    private void Awake()
+    {
+        player = GameObject.FindWithTag("Player");
+        playerInputController = player.GetComponent<PlayerInputController>();
+    }
+
     private void OnTriggerEnter(Collider collision)
     {
         if (collision.gameObject.CompareTag("Player"))
