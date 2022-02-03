@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -10,6 +11,8 @@ public class PlayerWalkController : MonoBehaviour
     [SerializeField] private float moveSpeed = 5f;
     [SerializeField] private float chargingMoveSpeedFactor = 0.5f;
     private bool facingRight= true;
+    private bool startGame = true;
+    [SerializeField] private GameObject firstPersonCamera;
     
     private void Awake()
     {
@@ -34,12 +37,28 @@ public class PlayerWalkController : MonoBehaviour
         {
             flip();
         }
-        
+    }
+
+    private void FixedUpdate()
+    {
+        // if (playerInputController.MoveInputHorizontal<0 && facingRight)
+        // {
+        //     flip();
+        // }
+        // else if (playerInputController.MoveInputHorizontal>0 && !facingRight)
+        // {
+        //     flip();
+        // }
     }
 
     void flip()
     {
         facingRight = !facingRight;
-        transform.Rotate(0, 180f ,0 );
+        transform.Rotate(0, 180f,0 );
+        if (startGame==false)
+        {
+            facingRight = !facingRight;
+            firstPersonCamera.transform.Rotate(0,180,0);
+        }
     }
 }
