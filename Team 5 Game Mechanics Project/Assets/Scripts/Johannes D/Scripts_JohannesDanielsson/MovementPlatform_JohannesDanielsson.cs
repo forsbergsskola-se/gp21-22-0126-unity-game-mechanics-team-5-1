@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MovementPlatform : MonoBehaviour
+public class MovementPlatform_JohannesDanielsson : MonoBehaviour
 {
    public GameObject Player;
 
