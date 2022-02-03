@@ -35,7 +35,7 @@ public class FlightPowerUp : MonoBehaviour
         GetComponent<MeshRenderer>().enabled = false;
         GetComponent<BoxCollider>().enabled = false;
         player.GetComponent<Rigidbody>().useGravity = false;
-        Flight();
+        //Flight();
         
         Debug.Log("I started waiting");
         yield return new WaitForSeconds(duration);
