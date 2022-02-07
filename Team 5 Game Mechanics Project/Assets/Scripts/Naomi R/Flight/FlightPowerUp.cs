@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class FlightPowerUp : MonoBehaviour
 {
-    [SerializeField] private float duration = 5f, flightSpeed;
+    [SerializeField] private float duration = 3f, flightSpeed;
     private GameObject player;
     private Rigidbody playerRigidbody;
     private bool isFlying;
