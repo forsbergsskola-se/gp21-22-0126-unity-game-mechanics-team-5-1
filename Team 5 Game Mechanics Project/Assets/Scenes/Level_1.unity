@@ -1311,6 +1311,22 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: 0.1
       objectReference: {fileID: 0}
+    - target: {fileID: 1115306553, guid: 24975e54c9c611f43a98e124a31d189c, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1199742115739162579, guid: 24975e54c9c611f43a98e124a31d189c, type: 3}
+      propertyPath: Bullet
+      value: 
+      objectReference: {fileID: 8324285969654734765, guid: 799487a6fe59fa94db1e49a340c172e7, type: 3}
+    - target: {fileID: 1199742115739162579, guid: 24975e54c9c611f43a98e124a31d189c, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1199742115739162579, guid: 24975e54c9c611f43a98e124a31d189c, type: 3}
+      propertyPath: BurstFireRate
+      value: 0.1
+      objectReference: {fileID: 0}
     - target: {fileID: 3074025896610605337, guid: 24975e54c9c611f43a98e124a31d189c, type: 3}
       propertyPath: firstPersonCamera
       value: 
