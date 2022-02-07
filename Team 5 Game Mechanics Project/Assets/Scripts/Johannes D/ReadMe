@@ -1,0 +1,17 @@
+                                                Johannes Danielsson Readme:
+                                                
+ShotingBullet_1_Johannes: The first Shooting Mechanic just shoots 1. You can ofcourse spamme the left click by pressing left button on you'r mouse.
+
+Bullet_1_Johannes: The Bullet has a script that makes the bullet go in a direction and if it does not hit any thing it will get destory. You have the flip method to flip the other way you shoot. 
+
+FirstPerson_Camera_Johannes: We also have a First person Camera you can enable to turn to first person its not super good implomented and it is not necesery for the game to work. I just wanted to add something fun. 
+
+MovementPlatform_JohannesDanielsson: I added inside that script that the player should not be so slide on that object so it will be more stock if it is on the moving plattforms.
+
+FollowCamera_JohannesDanielsson: I made it so when the game awakes the main camera will find the player and added the main cameras movement into a lateuppdate so it would be little bit more smooth when movving the camera.
+
+PlayerDeath_JohannesDanielsson: Made it so if player reach a certant hight in the level that the player will die / reset the level. The Death method could have been nicer. 
+
+ShotingBullet_2_Johannes_Danielsson: This mechanics uses a Coroutine to bullets in a burst faschion. It wait 0.3s before it instantiates a new bullet
+
+WinScript_Johannes_Danielsson: If the box collider trigger gets trigger(Player jumps into it) the you move to the next level and you win the first level.
