@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1115306552}
   - component: {fileID: 1115306553}
+  - component: {fileID: 1199742115739162579}
   m_Layer: 6
   m_Name: BulletSpawner
   m_TagString: Untagged
@@ -45,6 +46,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Bullet: {fileID: 8324285969654734765, guid: 799487a6fe59fa94db1e49a340c172e7, type: 3}
+--- !u!114 &1199742115739162579
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1115306551}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a38ddf978d76e54d8647f5763e677c0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Bullet: {fileID: 0}
+  BurstFireRate: 0.3
 --- !u!1 &3675522786221954794
 GameObject:
   m_ObjectHideFlags: 0
@@ -181,6 +196,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 5
   chargingMoveSpeedFactor: 0.5
+  firstPersonCamera: {fileID: 0}
 --- !u!114 &4505898031571982955
 MonoBehaviour:
   m_ObjectHideFlags: 0
