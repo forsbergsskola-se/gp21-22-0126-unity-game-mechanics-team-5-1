@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class FlightRegular : MonoBehaviour
+public class Flight_2_NaomiRuokamo : MonoBehaviour
 {
     [SerializeField] private int flightSpeed, dropSpeed;
     private PlayerInputController playerInputController;
@@ -19,7 +19,7 @@ public class FlightRegular : MonoBehaviour
     {
         if (Input.GetKey(KeyCode.W))
         {
-            playerRigidbody.AddForce(Vector3.up *flightSpeed);
+            playerRigidbody.AddForce(Vector3.up * flightSpeed);
         }
 
         if (Input.GetKey(KeyCode.S))

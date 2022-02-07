@@ -1,7 +1,7 @@
 using System.Collections;
 using UnityEngine;
 
-public class FlightPowerUp : MonoBehaviour
+public class Flight_1_NaomiRuokamo : MonoBehaviour
 {
     [SerializeField] private float duration = 3f, flightSpeed;
     private GameObject player;
