@@ -8,12 +8,6 @@ public class PlayerDeath_JohannesDanielsson : MonoBehaviour
 {
     private bool playerAktiv = true;
     [SerializeField]private GameObject player;
-    public bool dead;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
     // Update is called once per frame
     void Update()
@@ -29,7 +23,7 @@ public class PlayerDeath_JohannesDanielsson : MonoBehaviour
 
     private void Death()
     {
-        if (player.transform.position.y <= -2&& playerAktiv== true)
+        if (player.transform.position.y <= -2&& playerAktiv)
         {
             player.gameObject.SetActive(false);
             playerAktiv = false;
