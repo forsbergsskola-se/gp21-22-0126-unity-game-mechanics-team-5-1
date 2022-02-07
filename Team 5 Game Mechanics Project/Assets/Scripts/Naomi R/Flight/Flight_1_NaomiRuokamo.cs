@@ -29,15 +29,12 @@ public class Flight_1_NaomiRuokamo : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-            Debug.Log("power up was picked up");
             StartCoroutine(PowerUp(collision));
         }
     }
 
     IEnumerator PowerUp(Collider collision)
     {
-        Debug.Log("I started the coroutine");
-
         GetComponent<MeshRenderer>().enabled = false;
         GetComponent<BoxCollider>().enabled = false;
         
@@ -45,9 +42,7 @@ public class Flight_1_NaomiRuokamo : MonoBehaviour
 
         isFlying = true;
         
-        Debug.Log("I started waiting");
         yield return new WaitForSeconds(duration);
-        Debug.Log("I finished the waiting");
 
         playerRigidbody.useGravity = true;
         
