@@ -5,27 +5,31 @@ using UnityEngine;
 
 public class ShotingBullet_2_JohannesDanielsson : MonoBehaviour
 {
-    public GameObject Bullet;
-    // Start is called before the first frame update
-    private void Start()
-    {
-        
-    }
+    [SerializeField] private GameObject Bullet;
+    public float BurstFireRate = 0.3f;
 
     // Update is called once per frame
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.Mouse0))
         {
-            ShootingTheBullet();
+            StartCoroutine(ShootBurst());
         }
     }
 
     void ShootingTheBullet()
     {
-       Instantiate(Bullet, new Vector3(transform.position.x+1f, transform.position.y+1.5f), transform.rotation);
-       Instantiate(Bullet, new Vector3(transform.position.x+1f, transform.position.y+0.75f), transform.rotation);
-       Instantiate(Bullet, new Vector3(transform.position.x+1f, transform.position.y+0f), transform.rotation);
+       
+    }
+
+    IEnumerator ShootBurst()
+    {
+        Instantiate(Bullet, new Vector3(transform.position.x + 1f, transform.position.y), transform.rotation);
+        yield return new WaitForSeconds(BurstFireRate);
+        Instantiate(Bullet, new Vector3(transform.position.x + 1f, transform.position.y), transform.rotation);
+        yield return new WaitForSeconds(BurstFireRate);
+        Instantiate(Bullet, new Vector3(transform.position.x + 1f, transform.position.y), transform.rotation);
+        yield return new WaitForSeconds(BurstFireRate);
     }
 
    
