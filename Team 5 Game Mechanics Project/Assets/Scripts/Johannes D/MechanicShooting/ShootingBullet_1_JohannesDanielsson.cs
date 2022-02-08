@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ShotingBullet_1_JohannesDanielsson : MonoBehaviour
+public class ShootingBullet_1_JohannesDanielsson : MonoBehaviour
 {
     public GameObject Bullet;
     // Start is called before the first frame update

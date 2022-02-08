@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ShotingBullet_2_JohannesDanielsson : MonoBehaviour
+public class ShootingBullet_2_JohannesDanielsson : MonoBehaviour
 {
     [SerializeField] private GameObject Bullet;
     public float BurstFireRate = 0.3f;
