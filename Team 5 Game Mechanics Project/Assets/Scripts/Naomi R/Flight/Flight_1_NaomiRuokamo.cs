@@ -3,24 +3,24 @@ using UnityEngine;
 
 public class Flight_1_NaomiRuokamo : MonoBehaviour
 {
-    [SerializeField] private float duration = 3f, flightSpeed;
+    [SerializeField] private float duration, floatSpeed;
     private GameObject player;
     private Rigidbody playerRigidbody;
-    private bool isFlying;
+    private bool isFloating;
 
     
     private void Awake()
     {
         player = GameObject.FindWithTag("Player");
         playerRigidbody = player.GetComponent<Rigidbody>();
-        isFlying = false;
+        isFloating = false;
     }
 
     private void Update()
     {
-        if (isFlying)
+        if (isFloating)
         {
-            Vector3 v = new Vector3(0, flightSpeed *Time.deltaTime,0);
+            Vector3 v = new Vector3(0, floatSpeed *Time.deltaTime,0);
             player.transform.position = player.transform.position+v;
         }
     }
@@ -29,24 +29,24 @@ public class Flight_1_NaomiRuokamo : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-            StartCoroutine(PowerUp(collision));
+            StartCoroutine(FloatPowerUp(collision));
         }
     }
 
-    IEnumerator PowerUp(Collider collision)
+    IEnumerator FloatPowerUp(Collider collision)
     {
         GetComponent<MeshRenderer>().enabled = false;
         GetComponent<BoxCollider>().enabled = false;
         
         playerRigidbody.useGravity = false;
 
-        isFlying = true;
+        isFloating = true;
         
         yield return new WaitForSeconds(duration);
 
         playerRigidbody.useGravity = true;
         
-        isFlying = false;
+        isFloating = false;
         
         Destroy(gameObject);
     }
