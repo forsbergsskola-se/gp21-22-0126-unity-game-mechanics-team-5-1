@@ -18,7 +18,6 @@ GameObject:
   - component: {fileID: 3582406840192900518}
   - component: {fileID: 3582406840192900519}
   - component: {fileID: 3582406840192900512}
-  - component: {fileID: 3582406840192900513}
   m_Layer: 0
   m_Name: PlayerOne
   m_TagString: Player
@@ -198,20 +197,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bc12d614ac4bc94478f73dd9ffdf40f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &3582406840192900513
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4250435593111127832}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 44e3ecdc0063895439aaf647b61a169b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  flightSpeed: 5
-  dropSpeed: 0
 --- !u!1 &5205606135112364360
 GameObject:
   m_ObjectHideFlags: 0
