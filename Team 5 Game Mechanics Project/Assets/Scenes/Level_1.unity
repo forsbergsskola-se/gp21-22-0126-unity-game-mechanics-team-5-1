@@ -264,17 +264,9 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 3582406840192900513, guid: 9f00496efa0852842b3f1bd9899cfedb, type: 3}
-      propertyPath: dropSpeed
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 3582406840192900513, guid: 9f00496efa0852842b3f1bd9899cfedb, type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 3582406840192900514, guid: 9f00496efa0852842b3f1bd9899cfedb, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 3582406840192900514, guid: 9f00496efa0852842b3f1bd9899cfedb, type: 3}
       propertyPath: m_LocalPosition.x
