@@ -251,6 +251,11 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 3675522786221954794, guid: 24975e54c9c611f43a98e124a31d189c, type: 3}
   m_PrefabInstance: {fileID: 3675522786162575833}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &318906797 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4250435593111127832, guid: 9f00496efa0852842b3f1bd9899cfedb, type: 3}
+  m_PrefabInstance: {fileID: 5205606136142641787}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &345506938 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1461408574035967748, guid: 2dce14f076c0acf448214eed13a00614, type: 3}
@@ -1072,7 +1077,7 @@ PrefabInstance:
     - target: {fileID: 2159186283224774287, guid: 16c0d4a89eaf7144fa4f7da44395e989, type: 3}
       propertyPath: Player
       value: 
-      objectReference: {fileID: 93200179}
+      objectReference: {fileID: 318906797}
     - target: {fileID: 7161648505742617127, guid: 16c0d4a89eaf7144fa4f7da44395e989, type: 3}
       propertyPath: m_Name
       value: MovingPlattformUppandDown
@@ -1502,6 +1507,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: PlayerOne
       objectReference: {fileID: 0}
+    - target: {fileID: 5205606135112364365, guid: 9f00496efa0852842b3f1bd9899cfedb, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5205606135112364366, guid: 9f00496efa0852842b3f1bd9899cfedb, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9f00496efa0852842b3f1bd9899cfedb, type: 3}
 --- !u!1001 &6354468392262721400
@@ -1566,7 +1579,7 @@ PrefabInstance:
     - target: {fileID: 6354468391893203075, guid: cbdc23988857901409b4750871d02c4d, type: 3}
       propertyPath: Player
       value: 
-      objectReference: {fileID: 93200179}
+      objectReference: {fileID: 318906797}
     - target: {fileID: 6354468391893203084, guid: cbdc23988857901409b4750871d02c4d, type: 3}
       propertyPath: m_Name
       value: MovingPlatform
