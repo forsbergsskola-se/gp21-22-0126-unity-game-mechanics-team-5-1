@@ -17,15 +17,15 @@ public class UI_FlightBar : MonoBehaviour
 
     private void Start()
     {
-        DecreaseBar(0.75f);
+        //DecreaseBar(1f);
     }
 
-    void Update()
+    private void Update()
     {
         if (slider.value > target)
         {
-            slider.value -= speed * Time.deltaTime;
             if (!particleSys.isPlaying) particleSys.Play();
+            slider.value -= speed * Time.deltaTime;
         }
         else particleSys.Stop();
     }
