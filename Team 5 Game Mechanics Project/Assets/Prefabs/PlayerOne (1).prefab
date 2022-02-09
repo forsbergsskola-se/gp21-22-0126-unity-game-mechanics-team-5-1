@@ -76,7 +76,6 @@ GameObject:
   - component: {fileID: 3267756299326340695}
   - component: {fileID: 3267756299326340692}
   - component: {fileID: 3267756299326340693}
-  - component: {fileID: 3267756299326340690}
   - component: {fileID: 3267756299326340691}
   m_Layer: 0
   m_Name: PlayerOne (1)
@@ -224,27 +223,12 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3267756299326340688}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3cd8db053e77cd8408af9f133925a2da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   jumpForce: 500
---- !u!114 &3267756299326340690
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3267756299326340688}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dc3d65b4faf42fc4da4a07a684318887, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  minimumJumpForce: 100
-  maximumJumpForce: 600
-  chargeTime: 1
 --- !u!114 &3267756299326340691
 MonoBehaviour:
   m_ObjectHideFlags: 0
