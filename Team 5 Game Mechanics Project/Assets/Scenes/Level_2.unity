@@ -1445,6 +1445,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9dd5756bec2dc4a4f9f67cd81ef1328a, type: 3}
+--- !u!1 &935447908 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3267756299326340688, guid: 9dd5756bec2dc4a4f9f67cd81ef1328a, type: 3}
+  m_PrefabInstance: {fileID: 935447907}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &935460205 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7161648505742617128, guid: 16c0d4a89eaf7144fa4f7da44395e989, type: 3}
@@ -7013,7 +7018,7 @@ PrefabInstance:
     - target: {fileID: 2159186283224774287, guid: 16c0d4a89eaf7144fa4f7da44395e989, type: 3}
       propertyPath: Player
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 935447908}
     - target: {fileID: 7161648505742617127, guid: 16c0d4a89eaf7144fa4f7da44395e989, type: 3}
       propertyPath: m_Name
       value: MovingPlattformUppandDown
@@ -7935,7 +7940,7 @@ PrefabInstance:
     - target: {fileID: 6354468391893203075, guid: cbdc23988857901409b4750871d02c4d, type: 3}
       propertyPath: Player
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 935447908}
     - target: {fileID: 6354468391893203084, guid: cbdc23988857901409b4750871d02c4d, type: 3}
       propertyPath: m_Name
       value: MovingPlatform

@@ -1052,7 +1052,7 @@ PrefabInstance:
     - target: {fileID: 2159186283224774287, guid: 16c0d4a89eaf7144fa4f7da44395e989, type: 3}
       propertyPath: Player
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 310380940}
     - target: {fileID: 7161648505742617127, guid: 16c0d4a89eaf7144fa4f7da44395e989, type: 3}
       propertyPath: m_Name
       value: MovingPlattformUppandDown
@@ -1453,7 +1453,7 @@ PrefabInstance:
     - target: {fileID: 6354468391893203075, guid: cbdc23988857901409b4750871d02c4d, type: 3}
       propertyPath: Player
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 310380940}
     - target: {fileID: 6354468391893203084, guid: cbdc23988857901409b4750871d02c4d, type: 3}
       propertyPath: m_Name
       value: MovingPlatform
