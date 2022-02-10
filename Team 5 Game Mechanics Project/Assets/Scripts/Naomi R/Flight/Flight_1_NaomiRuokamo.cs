@@ -7,8 +7,8 @@ public class Flight_1_NaomiRuokamo : MonoBehaviour
     private GameObject player;
     private Rigidbody playerRigidbody;
     private bool isFloating;
+    //public GameObject PowerupPrefab;
 
-    
     private void Awake()
     {
         player = GameObject.FindWithTag("Player");
@@ -41,13 +41,15 @@ public class Flight_1_NaomiRuokamo : MonoBehaviour
         playerRigidbody.useGravity = false;
 
         isFloating = true;
-        
-        yield return new WaitForSeconds(duration);
 
+        yield return new WaitForSeconds(duration);
+        
         playerRigidbody.useGravity = true;
         
-        isFloating = false;
+        //Instantiate()
         
+        isFloating = false;
+
         Destroy(gameObject);
     }
     
