@@ -1,14 +1,14 @@
-### 2.5D Jam-Style Platformer
+*Forsbergs Group Unity Project Jan - Feb 2022* 
+## 2.5D Jam-Style Platformer 
 
 In this project we aim to implement different Game Mechanics individually to then combine into one Game. The assignment is for each developer to design and build 2 different implementations of a game mechanic of their choosing. 
 
 
 
-
-#### Team Members
-- Johannes D
-- Tobias L
-- Naomi R
+## Team Members
+- [Johannes Danielsson](https://github.com/MustoLini)
+- [Tobias Lundin](https://github.com/AlchemistWolf)
+- [Naomi Ruokamo](https://github.com/gremdot)
 
 ## Mechanics & Implementations
 
@@ -28,4 +28,3 @@ Both the mechanics use individual Coroutines that are essentially the same excep
 ### Johannes - Shooting Mechanic 
 *description*
 # 
-*Forsbergs Group Unity Project Jan - Feb 2022* 
